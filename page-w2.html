@@ -143,6 +143,14 @@ body {
 .set {
 	height: 84px;
 }
+
+.mt-7 {
+	margin-top: 56px;
+}
+
+.mb-7 {
+	margin-bottom: 56px;
+}
 .set .sub-title {
 	text-align: left;
 	font: italic normal 64px Roboto;
@@ -150,8 +158,10 @@ body {
 }
 
 .photo {
+	display: block;
 	width: 384px;
 	height: 384px;
+	margin-bottom: 20px;
 }
 
 .display-items {
@@ -161,10 +171,110 @@ body {
 	align-items: center;
 }
 
+.list {
+	list-style:initial;
+}
+
+.list li::marker {
+	color: #891818;
+	font-size: 50px;
+	text-align: center;
+}
+
+.list li {
+	text-align: center;
+	list-style-position: inside;
+	font: italic normal bold 24px Roboto;
+}
+
+.con {
+	width: calc(20vw);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.area p {
+	text-align: center;
+	font: italic normal bold 24px Roboto;
+}
+
+.mb-2 {
+	margin-bottom: 16px;
+}
+
+.border-t-solid-line {
+	border-bottom: 1px solid black;
+	margin: 26px;
+}
+.m-4 {
+	margin: 32px;
+}
+.dp-h img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: calc(41.25vw - 0px);
+	height: calc(29.6vh - 0px);
+}
+.dp-m img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
+	width: calc(30.6vw - 0px);
+	height: calc(29.6vh - 0px);
+}
+
+.show {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.show-h .display-items img {
+	margin: 12px;
+	width: calc(20vw - 0px);
+	height: calc(58.14vh - 0px);
+}
+
+.show-m .display-items img {
+	margin: 12px;
+	width: calc(30.62vw - 0px);
+	height: calc(32.6vh - 0px);
+}
+
+.show-s .display-items img {
+	margin: 12px;
+	width: calc(20vw - 0px);
+	height: calc(24.925vh - 0px);
+}
+
+.mt-d5 {
+	margin-top: 4px;
+}
+.mb-18 {
+	margin-bottom: 144px;
+}
+.mb-8 {
+	margin-bottom: 64px;
+}
+
+
+.contact p {
+	margin: 8px;
+}
+
+
 	</style>
+
 
 </head>
 <body>
+
+
 	<!-- https://xd.adobe.com/view/27f2c1f7-6c48-42b5-a5fa-6db8eec461a5-72a1/specs/ out-banner-->
 	<div class="box">
 		<div class="">
@@ -184,77 +294,81 @@ body {
 		</div>
 
 		<div class="area bg-w">
-			<div class="set"><h2 class="sub-title">About</h2></div>
-			
-			<img class="photo" src="./img-w2/photo.png">
-			<p>Joanne Chen</p>
-			<p>1997/10/10</p>
-			<p>National Hex School Normal University Department of Visual Design</p>
-<br />
-<ul>
-	<li>Founder of ‘’XXXD Official’’</li>
-	<li>Graphic Designer</li>
-	<li>Graphic Intern of Hex School</li>
-</ul>
+			<div class="con">
+				<div class="set mt-7 mb-2"><h2 class="sub-title">About</h2></div>
+				<img class="photo" src="./img-w2/photo.png">
+			</div>
+				<p>Joanne Chen</p>
+				<p>1997/10/10</p>
+				<p>National Hex School Normal University <br />Department of Visual Design</p>
+				<div class="con border-t-solid-line"></div>
+				<ul class="list mb-7">
+					<li>Founder of ‘’XXXD Official’’</li>
+					<li>Graphic Designer</li>
+					<li>Graphic Intern of Hex School</li>
+				</ul>
+
 		</div>
 		<div class="area bg-b">
-			<div class="set"><h2 class="sub-title">My Brand ‘’XXXD’’</h2></div>
-			<p>Just Keep XXXD Everyday</p>
-			<p>2020 年創立的個人服飾品牌 引領叛逆少年開啟與社會對話的窗口 主打概念潮流T-Shirt</p>
-			<div><img src="./img-w2/brand_img1.png"></div>
-			<div>
+			<div class="set mt-7 mb-2"><h2 class="sub-title">My Brand ‘’XXXD’’</h2></div>
+			<p class="m-4">Just Keep XXXD Everyday</p>
+			<p class="m-4">2020 年創立的個人服飾品牌<br />引領叛逆少年開啟與社會對話的窗口<br />主打概念潮流T-Shirt</p>
+			<div class="dp-h"><img src="./img-w2/brand_img1.png"></div>
+			<div class="dp-m">
 				<img src="./img-w2/brand_img2.png">
 				<img src="./img-w2/brand_img3.png">
 			</div>
 		</div>
 		<div class="area bg-w">
-			<div class="set"><h2 class="sub-title">Other Works</h2></div>
+			<div class="set mt-7 mb-2"><h2 class="sub-title">Other Works</h2></div>
 			<p>2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D</p>
-			<div>
-				<div>
+			<div class="display-items-out mt-7 mb-18">
+				<div class="show show-h">
 					<div class="display-items">
 						<img src="./img-w2/work_img1.png">
-						<p>海報設計/2017</p>
+						<p class="mt-d5">海報設計/2017</p>
 					</div>
 					<div class="display-items">
 						<img src="./img-w2/work_img2.png">
-						<p>海報設計/2018</p>
+						<p class="mt-d5">海報設計/2018</p>
 					</div>
 					<div class="display-items">
 						<img src="./img-w2/work_img3.png">
-						<p>海報設計/2018</p>
+						<p class="mt-d5">海報設計/2018</p>
 					</div>
 				</div>
-				<div>
+				<div class="show show-m">
 					<div class="display-items">
 						<img src="./img-w2/work_img4.png">
-						<p>概念攝影/2018</p>
+						<p class="mt-d5">概念攝影/2018</p>
 					</div>
 					<div class="display-items">
 						<img src="./img-w2/work_img5.png">
-						<p>概念攝影/2018</p>
+						<p class="mt-d5">概念攝影/2018</p>
 					</div>
 				</div>
-				<div>
+				<div class="show show-s">
 					<div class="display-items">
 						<img src="./img-w2/work_img6.png">
-						<p>sasa 酒標設計/2019</p>
+						<p class="mt-d5">sasa 酒標設計/2019</p>
 					</div>
 					<div class="display-items">
 						<img src="./img-w2/work_img7.png">
-						<p>攝影創作/2018</p>
+						<p class="mt-d5">攝影創作/2018</p>
 					</div>
 					<div class="display-items">
 						<img src="./img-w2/work_img8.png">
-						<p>官網設計/2020</p>
+						<p class="mt-d5">官網設計/2020</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="area bg-b">
-			<div class="set"><h2 class="sub-title">Contact</h2></div>
-			<p>Mail：xxxd@hexschool.com</p>
-			<p>Phone Number：0910123456</p>
+			<div class="set mt-7 mb-2"><h2 class="sub-title">Contact</h2></div>
+			<div class="contact mb-8">
+				<p>Mail：xxxd@hexschool.com</p>
+				<p>Phone Number：0910123456</p>
+			</div>
 		</div>
 	</div>
 </body>

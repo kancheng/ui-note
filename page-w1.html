@@ -58,24 +58,320 @@ table {
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 /* mac, IOS 系統字體 Windows 英文系統字  微軟正黑體 Android 系統字  IOS 系統字  通用字體 */
-	background: #e7eeea;            
+	/* background: #e7eeea; */
+	background: white;
 }
 
 /* =============================================================== */
 
 .box {
-	background: white;
-	/* width: 1920px; */
-	width: calc(100vw);
+	/* 外 #e7eeea 內 white 用於查錯 */
+	/* background: white; */
+	/* width: 1200px; */
+	width: calc(62.5vw);
 	margin: 0 auto;
 }
+
+.s-box {
+	/* 外 #e7eeea 內 white 用於查錯 */
+	/* background: white; */
+	/* width: 996px; */
+	width: calc(51.875vw);
+	margin: 0 auto;
+}
+
+.tail-line {
+	border-bottom: 2px solid black;
+}
+
+.border-b-gray {
+	border-bottom: 2px solid gray;
+}
+
+.border-b-white {
+	border-bottom: 2px solid white;
+}
+
+.name {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 80px;
+	line-height: 1.1875;
+	display: block;
+	width: 274px;
+}
+
+.outbox {
+	width: calc(100vw);
+}
+
+.bg-b {
+	background: #415165;
+}
+
+img {
+	display: block;
+}
+.photo {
+	margin-top: 52px;
+	margin-bottom: 48px;
+}
+
+.list-title {
+	display: flex;
+	align-items: center;
+}
+
+.jcfs {
+	justify-content: flex-start;
+}
+.jcc {
+	justify-content: center;
+}
+.list-title li .zh {
+	line-height: 1.5;
+	font-size: 32px;
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+.list-title li .en {
+	line-height: 1.5;
+	font-size: 24px;
+	margin-left: 8px;
+	font-weight: bold;
+}
+
+.list-cont li {
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.mt-3f {
+	margin-top: 15px;
+}
+.pt-3e {
+	padding-top: 24px;
+}
+
+.mb-8e {
+	margin-bottom: 64px;
+}
+
+.m-3e {
+	margin: 24px;
+}
+
+.mb-5e {
+	margin-bottom: 40px;
+}
+.mb-3e {
+	margin-bottom: 24px;
+}
+
+.mb-1e {
+	margin-bottom: 8px;
+}
+
+.mb-2e {
+	margin-bottom: 16px;
+}
+.w-font-color {
+	color: white;
+}
+
+.r-font-color {
+	color: #A00404;
+}
+.sb-list {
+	font-size: 24px;
+	line-height: 1;
+	padding-left: 24px;
+	border-left: 2px solid #fff;
+	width: 225px;
+	margin: 0 auto;
+}
+
+.sb-list li:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.pb-5e {
+	padding-bottom: 40px;
+}
+.pb-10e {
+	padding-bottom: 80px;
+}
+
+.mt-8e {
+	margin-top: 64px;
+}
+
+.canp-logo {
+	width: 100px;
+	height: 100px;
+}
+
+.show {
+	padding-left: 24px;
+	border-left: 2px solid #96A9C4;
+	margin-left: 24px;
+}
+.show h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.show p {
+	font-size: 20px;
+	line-height: 1.5;
+}
+.list-foo li {
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.25;
+}
+
+.list-foo li a {
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.list-foo li a:hover {
+	color: #96A9C4;
+	text-decoration: underline;
+}
+
+.list-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list-img li img {
+	margin: 8px;
+	width: 48px;
+	height: 48px;
+}
+.mb-4e {
+	margin-bottom: 32px;
+}
+.pb-4e {
+	padding-bottom: 32px;
+}
+
 
 </style>
 
 
 </head>
 <body>
-<!-- -->
-
+<!-- https://xd.adobe.com/view/ea9b77e8-282b-44dd-b785-8d59a751eeda-bfc8/ -->
+<!-- https://tzuhui.github.io/2020/01/08/HTML/html-img-blank/ -->
+	<div class="box tail-line">
+		<!-- Joanne Chen 該文字需要使用 h1 標籤而非 p 標籤 -->
+		<h1 class="name">Joanne Chen</h1>
+	</div>
+	<div class="box">
+		<img class="photo" src="./img-w1/photo.png" alt="這是一張國王的照片，只有誠實的人才看的見!!!">
+	</div>
+	<div class="box border-b-gray mb-2e">
+		<ul class="list-title jcfs mb-1e">
+			<li><p class="zh">個人資料</p></li>
+			<li><p class="en r-font-color">PROFILE</p></li>
+		</ul>
+	</div>
+	<div class="box">
+		<ul class="list-cont mb-3e">
+			<li>陳久安 Joanne Chen</li>
+			<li>1997-</li>
+			<li>應屆畢業生／接案設計師／UI 設計實習生</li>
+		</ul>
+		<ul class="list-cont mb-8e">
+			<li>UI 設計修行中／立志當斜槓青年</li>
+			<li> 獨立接案，內容涵蓋：<br/>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</li>
+		</ul>
+	</div>
+	<div class="box border-b-gray mb-2e">
+		<ul class="list-title jcfs mb-1e">
+			<li><p class="zh">學歷</p></li>
+			<li><p class="en r-font-color">EDUCATION</p></li>
+		</ul>
+	</div>
+	<div class="box">
+		<ul class="list-cont mb-2e">
+			<li>國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
+		</ul>
+		<ul class="list-cont mb-8e">
+			<li>國立六腳高級中學 美術班 | 2013－2016</li>
+		</ul>
+	</div>
+	<div class="outbox bg-b pb-5e">
+		<div class="s-box border-b-white mb-5e pt-3e">
+			<ul class="list-title jcc mb-1e w-font-color">
+				<li><p class="zh">技能</p></li>
+				<li><p class="en">SKILLS</p></li>
+			</ul>
+		</div>
+		<ul class="sb-list text-white">
+			<li>Adobe Photoshop</li>
+			<li>Adobe Illustrator</li>
+			<li>Adobe XD</li>
+			<li>Adobe Indesign</li>
+			<li>C4D</li>
+			<li>Adobe Premiere</li>
+			<li>語言 : 中文、英文</li>
+		</ul>
+	</div>
+	<div class="box border-b-gray mt-8e mb-2e">
+		<ul class="list-title jcfs mb-1e">
+			<li><p class="zh">工作經驗</p></li>
+			<li><p class="en r-font-color">WORK EXPERIENCE</p></li>
+		</ul>
+	</div>
+	<div class="box pb-10e">
+		<div class="show">
+			<!-- h1 標籤一個網頁中只會有一個，使用在最重要的文字內容。
+				「工作經驗」的區塊內容可依照以下圖片來做調整
+				示意圖： https://i.imgur.com/iOHBqhh.png -->
+			<h3>六角學院 視覺設計實習生 | 2019/07－2020/06</h3>
+			<img class="canp-logo" src="./img-w1/hexschool.png" alt="波吉!!波吉!!波吉!!波吉!!">
+			<p class="mb-3e">在六角學院長達一年的實習中，前期藉由公司課程掌握 HTML, CSS, Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活動，設計各式周邊商品及活動網路宣傳圖。後期進入 UI 設計範疇，設計六角共筆部落格 - W3HexSchool、六角發案服務網介面設計、供給學員的教 案- RWD官方網站設計，並設計各式網頁活動宣傳圖。</p>
+			<h3 class="mb-3e">獨立接案 Hao Jun 酒標設計 | 2019</h3>
+			<h3 class="mb-3e">獨立接案 Exulans 酒標設計 | 2019</h3>
+			<h3 class="mb-3e">獨立接案 桃園平鎮市民健走活動提案 | 2019</h3>
+			<h3 class="mb-3e">Simtree 興趣咖啡 工讀生 | 2018－2019</h3>
+			<img class="canp-logo" src="./img-w1/simtree.png" alt="這是一張國王的照片，只有擁有王之力的人才看的見!!!">
+			<p>擔任外場及吧台服務生，學習咖啡相關知識。</p>			
+		</div>
+	</div>
+	<div class="outbox bg-b">
+		<div class="box border-b-white pt-3e">
+			<ul class="list-title jcc mb-1e w-font-color">
+				<li><p class="zh">聯絡方式</p></li>
+				<li><p class="en">CONTACT METHOD</p></li>
+			</ul>
+		</div>
+		<div class="box pt-3e pb-4e">
+			<ul class="list-foo">
+				<li class="mb-2e">Mail：<a href="mailto:xxxd@hexschool.com">xxxd@hexschool.com</a></li>
+				<li class="mb-2e">Phone：<a href="tel:+886910123456">0910123456</a></li>
+				<li class="mb-2e">Kaohsiung, Taiwan</li>
+				<li class="mb-1e">作品連結：<a href="https://www.behance.net/xxxdddddd">https://www.behance.net/xxxdddddd</a></li>
+			</ul>
+			<ul class="list-img">
+				<li><img src="./img-w1/facebook.svg" alt="你看不到我!!!"></li>
+				<li><img src="./img-w1/instagram.svg" alt="你看不到我!!!"></li>
+				<li><img src="./img-w1/line.svg" alt="你看不到我!!!"></li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>

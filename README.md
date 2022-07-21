@@ -2,6 +2,8 @@
 
 ## About
 
+![](joke.png)
+
 作業練習
 
 ## Details

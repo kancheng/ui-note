@@ -87,9 +87,13 @@ body {
 }
 
 .font-pos {
-	width: 304px;
+	/* width: 304px; */
 }
 .font-pos p {
+	color: white;
+}
+
+.font-pos h1 {
 	color: white;
 }
 
@@ -274,101 +278,123 @@ body {
 </head>
 <body>
 
+<!-- https://xd.adobe.com/view/27f2c1f7-6c48-42b5-a5fa-6db8eec461a5-72a1/specs/ 
 
-	<!-- https://xd.adobe.com/view/27f2c1f7-6c48-42b5-a5fa-6db8eec461a5-72a1/specs/ out-banner-->
-	<div class="box">
-		<div class="">
-			<div class="banner">
-				<div class="font-pos">
-					<p class="sub-title">Here’s</p>
-					<p class="title mb-1">JOANNE</p>
-					<p class="sub-title m-1">Founder of “XXXD Official’’ & Graphic Designer</p>
-					<div class="icon-group">
-						<img class="img-icon" src="./img-w2/behance.svg">
-						<img class="img-icon" src="./img-w2/facebook.svg">
-						<img class="img-icon" src="./img-w2/instagram.svg">
-						<img class="img-icon" src="./img-w2/youtube.svg">
-					</div>
-				</div>
-			</div>			
-		</div>
+1. 空的 class="" 建議移除 這裡 V
 
-		<div class="area bg-w">
-			<div class="con">
-				<div class="set mt-7 mb-2"><h2 class="sub-title">About</h2></div>
-				<img class="photo" src="./img-w2/photo.png">
-			</div>
-				<p>Joanne Chen</p>
-				<p>1997/10/10</p>
-				<p>National Hex School Normal University <br />Department of Visual Design</p>
-				<div class="con border-t-solid-line"></div>
-				<ul class="list mb-7">
-					<li>Founder of ‘’XXXD Official’’</li>
-					<li>Graphic Designer</li>
-					<li>Graphic Intern of Hex School</li>
-				</ul>
+2. 最外層的 box 可以移除 V
 
-		</div>
-		<div class="area bg-b">
-			<div class="set mt-7 mb-2"><h2 class="sub-title">My Brand ‘’XXXD’’</h2></div>
-			<p class="m-4">Just Keep XXXD Everyday</p>
-			<p class="m-4">2020 年創立的個人服飾品牌<br />引領叛逆少年開啟與社會對話的窗口<br />主打概念潮流T-Shirt</p>
-			<div class="dp-h"><img src="./img-w2/brand_img1.png"></div>
-			<div class="dp-m">
-				<img src="./img-w2/brand_img2.png">
-				<img src="./img-w2/brand_img3.png">
+3. .font-pos 寬度可以移除，「Founder of “XXXD Official’’」 這段文字後方可以加入 br 標籤斷行 V
+
+4. banner 中的「JOANNE」建議改為 h1 標籤 V
+
+5. 標題文字（像是 About）可以使用 text-align: center 置中，不需要使用 flex 語法
+
+6. 「About」 內容區塊的結構可參考範例圖： https://i.imgur.com/wAgKzBk.png
+
+7. 「Just Keep XXXD Everyday」算是副標題，建議改為 h3 標籤
+
+8. 「My Brand ‘’XXXD’’」區塊的圖片寬高都建議移除
+
+並且區塊的 image 結構應如下圖：
+
+https://i.imgur.com/uuIV1FM.png
+
+9. 「2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D」這段文字要有斷行才符合設計稿樣式
+
+10. 「Other Works」區塊的圖片寬高都建議移除
+
+另外，「Other Works 」內容可以分成三塊 ul li，優點是一排可以看成是一個種類，而且也可以整排往下設 margin-bottom 來推出留白空間
+
+https://i.imgur.com/7BVwlv0.png
+	-->
+	<div class="banner">
+		<div class="font-pos">
+			<p class="sub-title">Here’s</p>
+			<h1 class="title mb-1">JOANNE</h1>
+			<p class="sub-title m-1">Founder of “XXXD Official’’<br /> & Graphic Designer</p>
+			<div class="icon-group">
+				<img class="img-icon" src="./img-w2/behance.svg">
+				<img class="img-icon" src="./img-w2/facebook.svg">
+				<img class="img-icon" src="./img-w2/instagram.svg">
+				<img class="img-icon" src="./img-w2/youtube.svg">
 			</div>
 		</div>
-		<div class="area bg-w">
-			<div class="set mt-7 mb-2"><h2 class="sub-title">Other Works</h2></div>
-			<p>2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D</p>
-			<div class="display-items-out mt-7 mb-18">
-				<div class="show show-h">
-					<div class="display-items">
-						<img src="./img-w2/work_img1.png">
-						<p class="mt-d5">海報設計/2017</p>
-					</div>
-					<div class="display-items">
-						<img src="./img-w2/work_img2.png">
-						<p class="mt-d5">海報設計/2018</p>
-					</div>
-					<div class="display-items">
-						<img src="./img-w2/work_img3.png">
-						<p class="mt-d5">海報設計/2018</p>
-					</div>
+	</div>			
+	<div class="area bg-w">
+		<div class="con">
+			<div class="set mt-7 mb-2"><h2 class="sub-title">About</h2></div>
+			<img class="photo" src="./img-w2/photo.png">
+		</div>
+		<p>Joanne Chen</p>
+		<p>1997/10/10</p>
+		<p>National Hex School Normal University <br />Department of Visual Design</p>
+		<div class="con border-t-solid-line"></div>
+		<ul class="list mb-7">
+			<li>Founder of ‘’XXXD Official’’</li>
+			<li>Graphic Designer</li>
+			<li>Graphic Intern of Hex School</li>
+		</ul>
+	</div>
+	<div class="area bg-b">
+		<div class="set mt-7 mb-2"><h2 class="sub-title">My Brand ‘’XXXD’’</h2></div>
+		<p class="m-4">Just Keep XXXD Everyday</p>
+		<p class="m-4">2020 年創立的個人服飾品牌<br />引領叛逆少年開啟與社會對話的窗口<br />主打概念潮流T-Shirt</p>
+		<div class="dp-h"><img src="./img-w2/brand_img1.png"></div>
+		<div class="dp-m">
+			<img src="./img-w2/brand_img2.png">
+			<img src="./img-w2/brand_img3.png">
+		</div>
+	</div>
+	<div class="area bg-w">
+		<div class="set mt-7 mb-2"><h2 class="sub-title">Other Works</h2></div>
+		<p>2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D</p>
+		<div class="display-items-out mt-7 mb-18">
+			<div class="show show-h">
+				<div class="display-items">
+					<img src="./img-w2/work_img1.png">
+					<p class="mt-d5">海報設計/2017</p>
 				</div>
-				<div class="show show-m">
-					<div class="display-items">
-						<img src="./img-w2/work_img4.png">
-						<p class="mt-d5">概念攝影/2018</p>
-					</div>
-					<div class="display-items">
-						<img src="./img-w2/work_img5.png">
-						<p class="mt-d5">概念攝影/2018</p>
-					</div>
+				<div class="display-items">
+					<img src="./img-w2/work_img2.png">
+					<p class="mt-d5">海報設計/2018</p>
 				</div>
-				<div class="show show-s">
-					<div class="display-items">
-						<img src="./img-w2/work_img6.png">
-						<p class="mt-d5">sasa 酒標設計/2019</p>
-					</div>
-					<div class="display-items">
-						<img src="./img-w2/work_img7.png">
-						<p class="mt-d5">攝影創作/2018</p>
-					</div>
-					<div class="display-items">
-						<img src="./img-w2/work_img8.png">
-						<p class="mt-d5">官網設計/2020</p>
-					</div>
+				<div class="display-items">
+					<img src="./img-w2/work_img3.png">
+					<p class="mt-d5">海報設計/2018</p>
+				</div>
+			</div>
+			<div class="show show-m">
+				<div class="display-items">
+					<img src="./img-w2/work_img4.png">
+					<p class="mt-d5">概念攝影/2018</p>
+				</div>
+				<div class="display-items">
+					<img src="./img-w2/work_img5.png">
+					<p class="mt-d5">概念攝影/2018</p>
+				</div>
+			</div>
+			<div class="show show-s">
+				<div class="display-items">
+					<img src="./img-w2/work_img6.png">
+					<p class="mt-d5">sasa 酒標設計/2019</p>
+				</div>
+				<div class="display-items">
+					<img src="./img-w2/work_img7.png">
+					<p class="mt-d5">攝影創作/2018</p>
+				</div>
+				<div class="display-items">
+					<img src="./img-w2/work_img8.png">
+					<p class="mt-d5">官網設計/2020</p>
 				</div>
 			</div>
 		</div>
-		<div class="area bg-b">
-			<div class="set mt-7 mb-2"><h2 class="sub-title">Contact</h2></div>
-			<div class="contact mb-8">
-				<p>Mail：xxxd@hexschool.com</p>
-				<p>Phone Number：0910123456</p>
-			</div>
+	</div>
+	<div class="area bg-b">
+		<div class="set mt-7 mb-2"><h2 class="sub-title">Contact</h2></div>
+		<div class="contact mb-8">
+			<p>Mail：xxxd@hexschool.com</p>
+			<p>Phone Number：0910123456</p>
 		</div>
 	</div>
 </body>

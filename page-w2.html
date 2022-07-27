@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -102,8 +102,15 @@ body {
 	font: italic normal 900 80px Roboto;
 }
 .font-pos .sub-title {
-	text-align: left;
 	font: italic normal bold 24px Roboto;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-center {
+	text-align: center;
 }
 
 .mb-1 {
@@ -220,6 +227,22 @@ body {
 .m-4 {
 	margin: 32px;
 }
+.dp-lists {
+	width: calc(50vw - 0px);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.dp-lists li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
 .dp-h img {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -245,18 +268,21 @@ body {
 
 .show-h .display-items img {
 	margin: 12px;
+	display: block;
 	width: calc(20vw - 0px);
 	height: calc(58.14vh - 0px);
 }
 
 .show-m .display-items img {
 	margin: 12px;
+	display: block;
 	width: calc(30.62vw - 0px);
 	height: calc(32.6vh - 0px);
 }
 
 .show-s .display-items img {
 	margin: 12px;
+	display: block;
 	width: calc(20vw - 0px);
 	height: calc(24.925vh - 0px);
 }
@@ -293,9 +319,9 @@ ID : kancheng#3915
 
 4. banner 中的「JOANNE」建議改為 h1 標籤 V
 
-5. 標題文字（像是 About）可以使用 text-align: center 置中，不需要使用 flex 語法
+5. 標題文字（像是 About）可以使用 text-align: center 置中，不需要使用 flex 語法 V
 
-6. 「About」 內容區塊的結構可參考範例圖： https://i.imgur.com/wAgKzBk.png
+6. 「About」 內容區塊的結構可參考範例圖： https://i.imgur.com/wAgKzBk.png V
 
 7. 「Just Keep XXXD Everyday」算是副標題，建議改為 h3 標籤 V
 
@@ -305,7 +331,7 @@ ID : kancheng#3915
 
 https://i.imgur.com/uuIV1FM.png
 
-9. 「2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D」這段文字要有斷行才符合設計稿樣式
+9. 「2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D」這段文字要有斷行才符合設計稿樣式 V
 
 10. 「Other Works」區塊的圖片寬高都建議移除
 
@@ -315,9 +341,9 @@ https://i.imgur.com/7BVwlv0.png
 	-->
 	<div class="banner">
 		<div class="font-pos">
-			<p class="sub-title">Here’s</p>
+			<p class="sub-title text-align-left">Here’s</p>
 			<h1 class="title mb-1">JOANNE</h1>
-			<p class="sub-title m-1">Founder of “XXXD Official’’<br /> & Graphic Designer</p>
+			<p class="sub-title m-1 text-align-left">Founder of “XXXD Official’’<br /> & Graphic Designer</p>
 			<div class="icon-group">
 				<img class="img-icon" src="./img-w2/behance.svg">
 				<img class="img-icon" src="./img-w2/facebook.svg">
@@ -328,12 +354,14 @@ https://i.imgur.com/7BVwlv0.png
 	</div>			
 	<div class="area bg-w">
 		<div class="con">
-			<div class="set mt-7 mb-2"><h2 class="sub-title">About</h2></div>
+			<div class="set mt-7 mb-2"><h2 class="sub-title text-align-center">About</h2></div>
 			<img class="photo" src="./img-w2/photo.png">
 		</div>
-		<p>Joanne Chen</p>
-		<p>1997/10/10</p>
-		<p>National Hex School Normal University <br />Department of Visual Design</p>
+		<ul>
+			<li><p>Joanne Chen</p></li>
+			<li><p>1997/10/10</p></li>
+			<li><p>National Hex School Normal University <br />Department of Visual Design</p></li>
+		</ul>
 		<div class="con border-t-solid-line"></div>
 		<ul class="list mb-7">
 			<li>Founder of ‘’XXXD Official’’</li>
@@ -342,18 +370,25 @@ https://i.imgur.com/7BVwlv0.png
 		</ul>
 	</div>
 	<div class="area bg-b">
-		<div class="set mt-7 mb-2"><h2 class="sub-title">My Brand ‘’XXXD’’</h2></div>
+		<div class="set mt-7 mb-2"><h2 class="sub-title text-align-center">My Brand ‘’XXXD’’</h2></div>
 		<h3 class="m-4">Just Keep XXXD Everyday</h3>
 		<p class="m-4">2020 年創立的個人服飾品牌<br />引領叛逆少年開啟與社會對話的窗口<br />主打概念潮流T-Shirt</p>
+<!-- 		<ul class="dp-lists">
+			<li><img src="./img-w2/brand_img1.png"></li>
+			<li><img src="./img-w2/brand_img2.png"></li>
+			<li><img src="./img-w2/brand_img3.png"></li>
+		</ul> -->
+
 		<div class="dp-h"><img src="./img-w2/brand_img1.png"></div>
 		<div class="dp-m">
 			<img src="./img-w2/brand_img2.png">
 			<img src="./img-w2/brand_img3.png">
 		</div>
+	
 	</div>
 	<div class="area bg-w">
-		<div class="set mt-7 mb-2"><h2 class="sub-title">Other Works</h2></div>
-		<p>2016-2020 年累積的作品 海報/廣告/攝影/LOGO/3D</p>
+		<div class="set mt-7 mb-2"><h2 class="sub-title text-align-center">Other Works</h2></div>
+		<p>2016-2020 年累積的作品 <br />海報/廣告/攝影/LOGO/3D</p>
 		<div class="display-items-out mt-7 mb-18">
 			<div class="show show-h">
 				<div class="display-items">
@@ -396,7 +431,7 @@ https://i.imgur.com/7BVwlv0.png
 		</div>
 	</div>
 	<div class="area bg-b">
-		<div class="set mt-7 mb-2"><h2 class="sub-title">Contact</h2></div>
+		<div class="set mt-7 mb-2"><h2 class="sub-title text-align-center">Contact</h2></div>
 		<div class="contact mb-8">
 			<p>Mail：xxxd@hexschool.com</p>
 			<p>Phone Number：0910123456</p>

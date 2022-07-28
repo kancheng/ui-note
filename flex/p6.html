@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+	<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+		body {
+			font-family: verdana;
+			background: gray;
+			margin: 0 auto;
+			padding: 30px;
+
+		}
+		.box {
+			width: 910px;
+			height: 500px;
+			background: #37523d;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		.inbox {
+			width: 880px;
+			height: 470px;
+			background: #afb6b8;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.hea {
+			background: #e7eeea;
+			width: 880px;
+			height: 60px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.conn {
+			background: #fff;
+			display: flex;
+			flex-direction: row;
+			height: 410px;
+			width: 880px;
+			border-radius: 0px 0px 10px 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.logo {
+			margin-right: 10px;
+			margin-left: 30px;
+		}
+		/* clip:rect (top, right, bottom, left) */
+		.pic {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			margin-left: 50px;
+			margin-right: 50px;
+			border-radius: 3px;
+		}
+		.list-obj {
+			margin-top: 22px;
+			margin-right: 30px;
+			margin-left: 10px;
+		}
+		.list-obj li a {
+			text-decoration: none;
+			color: #37523d;
+		}
+		.list-obj li a:hover {
+			text-decoration: none;
+			color: #58785f;
+			font-weight: bold;
+		}
+		.conn-info {
+			padding-top: 56px;
+			padding-bottom: 35px;
+			padding-left: 0px;
+			padding-right: 50px;
+			height: 410px;
+			width: 605px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.conn-info-pos h1 {
+			margin-bottom: 20px;
+			font-size: 25px;
+			color: #37523d;
+			font-weight: bold;
+		}
+		.conn-info-pos p {
+			margin-bottom: 10px;
+			line-height: 1.25;
+		}
+		.link-obj {
+			display: flex;
+			flex-direction: row;
+		}
+		.link-obj li a {
+			margin: 5px;
+			color: #37523d;
+			font-size: 20px;
+		}
+		.link-obj li a:hover {
+			margin: 5px;
+			font-size: 20px;
+			color: #58785f;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="inbox">
+			<div class="hea">
+				<img class="logo" src="./img-p6/logo.png">
+				<ul class="list-obj">
+					<li><a href="#">more</a></li>
+				</ul>
+			</div>
+			<div class="conn">
+				<div><img class="pic" src="./img-p6/pic.png" alt="笑你看不見，打我啊笨蛋!!!"></div>
+				<div class="conn-info">
+					<div class="conn-info-pos">
+						<h1>想吃甜點是不需要理由的，但是會胖</h1>
+						<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+						<p>是非成敗轉頭空,青山依舊在，幾度夕陽紅。白髮漁樵江上,古今多少事.都付笑談中。</p>
+					</div>
+					<div class="conn-info-pos">
+						<ul class="link-obj">
+							<li><a href="#">FB 分享</a></li>
+							<li><a href="#">IG 分享</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

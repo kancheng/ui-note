@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+	<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+		body {
+			font-family: verdana;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #afb6b8;
+			padding: 30px;
+		}
+		.boxshow {
+			position: absolute;
+			background: #3f5c4699;
+			width: 855px;
+			height: 470px;
+			z-index: -10;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box:hover .boxshow {
+			position: absolute;
+			background: #3f5c467d;
+			width: 855px;
+			height: 470px;
+			z-index: 10;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.boxshow p {
+			color: #fff;
+			font-size: 50px;
+			font-weight: 500;
+		}
+		.box {
+			width: 855px;
+			height: 470px;
+			background: grey;
+		}
+		.wbar {
+			background: white;
+			width: 855px;
+			height: 3px;
+		}
+		.conn {
+			height: 467px;
+			width: 855px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.conn-s1 {
+			background: #b3d4d1;
+			height: 467px;
+			width: 345px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.conn-s1 p {
+			color: #fff;
+			font-size: 20px;
+			margin-right: 55px;
+			margin-left: 55px;
+			line-height: 1.25;
+		}
+		.conn-s2 {}
+		.pic {
+			width: 510px;
+			height: 467px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="box">
+	<div class="boxshow"><p>Hello, World!</p></div>
+	<div class="wbar"></div>
+	<div class="conn">
+		<div class="conn-s1">
+			<p>Presentations are communication tools that can be used as lectures.</p>
+		</div>
+		<div class="conn-s2">
+			<img class="pic" src="./img-p8/pic.png">
+		</div>
+	</div>
+</div>
+</body>
+</html>

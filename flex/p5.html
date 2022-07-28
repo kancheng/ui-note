@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+	<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+		body {
+			font-family: verdana;
+			background: gray;
+			margin: 0 auto;
+		}
+		.box {
+			background: #fff;
+			width: 1290px;
+			height: 814px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.box-f {
+			background: #e7eeea;
+			height: 170px;
+			width: 1280px;
+			border-radius: 15px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+		}
+		.box-s {
+			background: #e7eeea;
+			height: 240px;
+			width: 1280px;
+			border-radius: 15px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.box-t {
+			background: #e7eeea;
+			height: 305px;
+			width: 1280px;
+			border-radius: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.box-sf-pos-2 h1 {
+			margin: 10px;
+			font-size: 20px;
+			color: #37523d;
+			font-weight: bold;
+		}
+		.box-sf-pos-2 p {
+			color: #37523d;
+			margin: 10px;
+		}
+		.box-f-pos {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.box-sf-pos-1 {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		.box-sf-pos-2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: left;
+		}
+		.logo-small {
+			width: 64px;
+			height: 63px;
+			margin-top: 20px;
+		}
+		.box-s-pos {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.box-s-pos h1 {
+			margin: 10px;
+			font-size: 20px;
+			color: #37523d;
+			font-weight: bold;
+		}
+		.box-s-pos p {
+			color: #37523d;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+		.box-t-pos {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+		}
+		.box-st-pos-1 {}
+
+		.box-st-pos-2 {}
+
+		.logo-big {}
+
+		.mr {
+			margin-right: 30px;
+		}
+		.ml {
+			margin-left: 30px;
+		}
+		.box-st-pos-2 h1 {
+			margin-top: 40px;
+			margin-bottom: 15px;
+			margin-right: 40px;
+			margin-left: 40px;
+			font-size: 20px;
+			color: #37523d;
+			font-weight: bold;
+		}
+		.box-st-pos-2 p {
+			color: #37523d;
+			margin-top: 15px;
+			margin-bottom: 5px;
+			margin-right: 40px;
+			margin-left: 40px;
+		}
+	</style>
+</head>
+<body>
+	<!--
+logo-big：https://hexschool.github.io/flexImgUrl/5/logo-big.png
+logo-medium：https://hexschool.github.io/flexImgUrl/5/logo-medium.png
+logo-small：https://hexschool.github.io/flexImgUrl/5/logo-small.png
+	-->
+<div class="box">
+	<div class="box-f">
+		<div class="box-f-pos">
+			<div class="box-sf-pos-1">
+				<img class="logo-small" src="./img-p5/logo-small.png">				
+			</div>
+			<div class="box-sf-pos-2">
+				<h1>為什麼 一定要吃甜點 ?</h1>
+				<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+			</div>
+		</div>
+		<div class="box-f-pos">
+			<div class="box-sf-pos-1">
+				<img class="logo-small" src="./img-p5/logo-small.png">				
+			</div>
+			<div class="box-sf-pos-2">
+				<h1>為什麼 一定要吃甜點 ?</h1>
+				<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+			</div>
+		</div>
+		<div class="box-f-pos">
+			<div class="box-sf-pos-1">
+				<img class="logo-small" src="./img-p5/logo-small.png">				
+			</div>
+			<div class="box-sf-pos-2">
+				<h1>為什麼 一定要吃甜點 ?</h1>
+				<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+			</div>
+		</div>
+	</div>
+	<div class="box-s">
+		<div class="box-s-pos">
+			<img class="logo-medium" src="./img-p5/logo-medium.png">
+			<h1>為什麼 一定要吃甜點 ?</h1>
+			<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+		</div>
+		<div class="box-s-pos">
+			<img class="logo-medium" src="./img-p5/logo-medium.png">
+			<h1>為什麼 一定要吃甜點 ?</h1>
+			<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+		</div>
+		<div class="box-s-pos">
+			<img class="logo-medium" src="./img-p5/logo-medium.png">
+			<h1>為什麼 一定要吃甜點 ?</h1>
+			<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+		</div>
+	</div>
+	<div class="box-t">
+		<div class="box-t-pos">
+			<div class="box-st-pos-1">
+				<img class="logo-big ml" src="./img-p5/logo-big.png">
+			</div>
+			<div class="box-st-pos-2">
+				<h1>為什麼 一定要吃甜點 ?</h1>
+				<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+			</div>
+		</div>
+		<div class="box-t-pos">
+			<div class="box-st-pos-2">
+				<h1>為什麼 一定要吃甜點 ?</h1>
+				<p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢,浪花淘盡英雄，非成敗轉頭空，滾滾長江东逝水，白髮漁樵江上，古今多少事，都付笑談中。</p>
+			</div>			
+			<div class="box-st-pos-1">
+				<img class="logo-big mr" src="./img-p5/logo-big.png">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

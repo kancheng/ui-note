@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+	<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+		body {
+			font-family: verdana;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #afb6b8;
+			padding: 30px;
+		}
+		.box {
+			background: #fff;
+			height: 570px;
+			width: 310px;
+		}
+		.box-class {
+			margin-top: 15px;
+			margin-bottom: 5px;
+			margin-left: 5px;
+			margin-right: 5px;
+			width: 300px;
+			box-shadow: 1.25px 1.25px 2.5px #bdbbbb;
+			border-radius: 5px;
+			padding-bottom: 2px ;
+		}
+		.box-head {
+			background: #e7eeea;
+			height: 70px;
+			width: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 5px 5px 0px 0px;
+		}
+
+		.box-head h1 {
+			font-size: 25px;
+			color: #829886;
+			font-weight: bold;
+		}
+		.bc-show-item {
+			margin: 5px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 5px;
+		}
+		.sub-items p {
+			color: #829886;
+			font-size: 18px;
+		}
+		.total p {
+			font-weight: bold;
+			color: #829886;
+			font-size: 22px;
+		}
+		.subj {
+			border-radius: 3px;
+		}
+		.bc-obj-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			margin-left: 10px;
+		}
+		.bc-obj {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.subj-show {}
+		.subj-co {
+			position: absolute;
+			background: #3f5c467d;
+			height: 74.6px;
+			width: 118px;
+			border-radius: 3px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: -10;
+		}
+		.subj-show:hover .subj-co {
+			position: absolute;
+			background: #3f5c467d;
+			height: 74.6px;
+			width: 118px;
+			border-radius: 3px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+		}
+		.subj-co p {
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.psm {
+			font-weight: bold;
+			color: #829886;
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+		.psnber {
+			font-weight: bold;
+			color: #829886;
+			font-size: 22px;
+			margin-top: 5px;
+		}
+		.show-the-items {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="box">
+	<div class="box-class">
+		<div class="box-head">
+			<h1>訂單摘要</h1>
+		</div>
+		<div class="bc-show">
+			<div class="bc-show-item sub-items"><p>小計</p><p>NT$ 2700</p></div>
+			<div class="bc-show-item sub-items"><p>運費</p><p>NT$ 300</p></div>
+			<div class="bc-show-item total"><p>總計</p><p>NT$ 3000</p></div>
+		</div>
+	</div>
+	<div class="box-class">
+		<div class="box-head">
+			<h1>購物清單</h1>
+		</div>
+		<div class="show-the-items">
+			<div class="bc-obj">
+				<div class="subj-show">
+					<div class="subj-co"><p>檢視</p></div>
+					<img class="subj" src="./img-p9/pic.png" alt="你看不到我!!你看不到我!!你看不到我!!">
+				</div>
+				<div class="bc-obj-item"><p class="psm">焦糖瑪卡龍 (2)</p><p class="psnber">NT$ 900</p></div>
+			</div>
+			<div class="bc-obj">
+				<div class="subj-show">
+					<div class="subj-co"><p>檢視</p></div>
+					<img class="subj" src="./img-p9/pic.png" alt="你看不到我!!你看不到我!!你看不到我!!">
+				</div>
+				<div class="bc-obj-item"><p class="psm">焦糖瑪卡龍 (2)</p><p class="psnber">NT$ 900</p></div>
+			</div>
+			<div class="bc-obj">
+				<div class="subj-show">
+					<div class="subj-co"><p>檢視</p></div>
+					<img class="subj" src="./img-p9/pic.png" alt="你看不到我!!你看不到我!!你看不到我!!">
+				</div>
+				<div class="bc-obj-item"><p class="psm">焦糖瑪卡龍 (2)</p><p class="psnber">NT$ 900</p></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

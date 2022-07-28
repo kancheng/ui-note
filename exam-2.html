@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+	<style type="text/css">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/* * {outline: 1px solid #000} */
+		body {
+			font-family: verdana;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #afb6b8;
+		}
+
+		.box {
+			margin: 30px;
+			background: #FFFFFF 0% 0% no-repeat padding-box;
+			width: 1024px;
+			height: 2605px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.w-part {
+			width: 1024px;
+			height: 2148px;
+		}
+		.w-part-pos {
+			width: 940px;
+			height: 2148px;
+			margin: 0 auto;
+		}
+		.g-part {
+			width: 1024px;
+			height: 116px;
+			background: #3F5D45 0% 0% no-repeat padding-box;
+		}
+		.lg-part {
+			width: 1024px;
+			height: 341px;
+			background: #EAF0ED 0% 0% no-repeat padding-box;
+		}
+		.hea {
+			margin-top: 30px;
+			width: 940px;
+			height: 40px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.list li a {
+			margin-right: 30px;
+			margin-left: 30px;
+			font-size: 16px;
+			color: #3F5D45;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.list li a:hover {
+			color: #58785f;
+			/* text-decoration: underline; */
+			border-bottom: 3px solid #58785f;
+		}
+		.logo {
+			width: 200px;
+			height: 30px;
+		}
+		.hea-tail {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.car {
+			margin-left: 40px;
+		}
+		.show-pic {
+			margin-top: 30px;
+			border-radius: 2px;
+			margin-bottom: 50px;
+		}
+		.info { 
+			height: 1420px; 
+			width: 940px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.list-btn {
+			background: white;
+			height: 1420px;
+			width: 320px;
+		}
+		.list-items {
+			background: white;
+			height: 1420px;
+			width: 640px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+
+		.glist {
+			margin: 5px;
+			height: 340px;
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.glist li {
+			padding-top: 24px;
+			padding-bottom: 24px;
+			outline: 1px solid #e7eeea;
+			width: 300px;
+		}
+		.glist li a {
+			text-decoration: none;
+			width: 300px;
+			display: block;
+			font-size: 20px;
+			color: #37523d;
+			font-weight: bold;
+			text-align: center;
+		}
+		.se-cho {
+			background: #e7eeea;
+		}
+		.fi-cho {
+			background: #37523d;
+		}
+		.fi-cho span {
+			color: #fff;
+			font-size: 20px;
+			width: 300px;
+			display: block;
+			font-weight: bold;
+			text-align: center;
+		}
+		.fi-cho span:hover {
+			letter-spacing: 2px;
+		}
+		.glist li a:hover {
+			letter-spacing: 2px;
+		}
+		.goods {
+			margin: 2px;
+			height: 465px;
+			width: 300px;
+		}
+		.obj-h {
+			position: absolute;
+			border-radius: 2px;
+			height: 315px;
+			width: 300px;
+			background: #3f5c467d;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			z-index: -20;
+		}
+		.obj-h p {
+			color: #fff;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.obj:hover .obj-h {
+			z-index: 20;
+		}
+		.pic {
+			border-radius: 2px;
+		}
+		.info-do {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			height: 65px;
+			width: 300px;
+		}
+		.info-do div p {
+			color: #37523d;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.info-do-obj {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			outline: 1px solid #e7eeea;
+			width: 185px;
+			height: 65px;
+		}
+		.info-do-price {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			outline: 1px solid #e7eeea;
+			width: 115px;
+			height: 65px;
+		}
+		.btn {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 300px;
+			height: 85px;
+			background: #e7eeea;
+		}
+		.btn p {
+			color: #37523d;
+			font-size: 25px;
+			font-weight: bold;
+		}
+		.btn:hover {
+			background: #37523d;
+		}
+		.btn:hover p {
+			color: #e7eeea;
+		}
+		.show-pic-h {
+			position: absolute;
+			width: 940px;
+			height: 496px;
+			border-radius: 2px;
+			background: #3f5c467d;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: -10;
+		}
+		.show-pic-h p {
+			color: white;
+			font-size: 40px;
+		}
+		.show-pic:hover .show-pic-h {
+			z-index: 10;
+		}
+		.info-btn-func {
+			width: 940px;
+			height: 80px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+		.info-btn-func-list {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.info-btn-func-list li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 60px;
+			height: 60px;
+			border: 1px solid #EAF0ED;
+		}
+		.info-btn-func-list li a {
+			width: 60px;
+			height: 60px;
+			display: block;
+			text-decoration: none;
+			color: #3F5D45;
+			padding: 20px;
+			text-align: center;
+		}
+		.info-btn-func-list li a:hover {
+			background: #EAF0ED;
+			color: #3F5D45;
+		}
+		.info-btn-func-list li .begin {
+			background: #3F5D45;
+			color: #fff;
+		}
+		.info-btn-func-list li .begin:hover {
+			background: #EAF0ED;
+			color: #3F5D45;
+		}
+
+	</style>
+</head>
+<body>
+	<!--
+https://github.com/hexschool/webLayoutTraining1st/tree/master/student-week1
+https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/screen/9ba8ec87-c41b-474f-b92b-d2bb2fc7f922/specs/
+https://hackmd.io/J7ajdobzTlyideAARTLz5Q
+	-->
+<div class="box">
+	<div class="w-part">
+		<div class="w-part-pos">
+			<div class="hea">
+				<img class="logo" src="./img-exam-2/logo-all-dark.svg" alt="這裡沒有 LOGO">
+				<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/logo-all-dark.svg -->
+				<div class="hea-tail">
+					<ul class="list">
+						<li><a href="#">首頁</a> </li>
+						<li><a href="#">甜點</a> </li>
+						<li><a href="#">登入</a> </li>
+					</ul>
+					<img class="car" src="./img-exam-2/shopping_cart.png" alt="這裡沒有購物車">
+					<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/shopping_cart.png -->
+				</div>
+			</div>
+			<div class="show-pic">
+				<div class="show-pic-h"><p>了解活動</p></div>
+				<img class="banner" src="./img-exam-2/banner.png" alt="這裡沒有圖片">
+				<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/banner.png -->
+			</div>
+			<div class="info">
+				<div class="list-btn">
+					<ul class="glist">
+						<li class="fi-cho"><span>甜點類別</span> </li>
+						<li class="se-cho"><a href="#">所有甜點 (48)</a> </li>
+						<li><a href="#">本日精選 (10)</a> </li>
+						<li><a href="#">人氣精選 (26)</a> </li>
+						<li><a href="#">新品上市 (12)</a> </li>
+					</ul>
+				</div>
+				<div class="list-items">
+						<div class="goods">
+							<div class="obj">
+								<div class="obj-h"><p>檢視</p></div>
+								<img class="pic" src="./img-exam-2/p-1.png" alt="猜猜我是誰!??">
+								<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/p-1.png -->
+							</div>
+							<div class="info-do">
+								<div class="info-do-obj"><p>焦糖甜甜圈</p></div>
+								<div class="info-do-price"><p>NT$ 450</p></div>
+							</div>
+							<div class="btn"><p>加入購物車</p></div>
+						</div>
+						<div class="goods">
+							<div class="obj">
+								<div class="obj-h"><p>檢視</p></div>
+								<img class="pic" src="./img-exam-2/p-2.png" alt="猜猜我是誰!??">
+								<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/p-2.png -->
+							</div>
+							<div class="info-do">
+								<div class="info-do-obj"><p>焦糖甜甜圈</p></div>
+								<div class="info-do-price"><p>NT$ 450</p></div>
+							</div>
+							<div class="btn"><p>加入購物車</p></div>
+						</div>
+						<div class="goods">
+							<div class="obj">
+								<div class="obj-h"><p>檢視</p></div>
+								<img class="pic" src="./img-exam-2/p-3.png" alt="猜猜我是誰!??">
+								<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/p-3.png -->
+							</div>
+							<div class="info-do">
+								<div class="info-do-obj"><p>焦糖甜甜圈</p></div>
+								<div class="info-do-price"><p>NT$ 450</p></div>
+							</div>
+							<div class="btn"><p>加入購物車</p></div>
+						</div>
+						<div class="goods">
+							<div class="obj">
+								<div class="obj-h"><p>檢視</p></div>
+								<img class="pic" src="./img-exam-2/p-4.png" alt="猜猜我是誰!??">
+								<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/p-4.png -->
+							</div>
+							<div class="info-do">
+								<div class="info-do-obj"><p>焦糖甜甜圈</p></div>
+								<div class="info-do-price"><p>NT$ 450</p></div>
+							</div>
+							<div class="btn"><p>加入購物車</p></div>
+						</div>
+						<div class="goods">
+							<div class="obj">
+								<div class="obj-h"><p>檢視</p></div>
+								<img class="pic" src="./img-exam-2/p-5.png" alt="猜猜我是誰!??">
+								<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/p-5.png -->
+							</div>
+							<div class="info-do">
+								<div class="info-do-obj"><p>焦糖甜甜圈</p></div>
+								<div class="info-do-price"><p>NT$ 450</p></div>
+							</div>
+							<div class="btn"><p>加入購物車</p></div>
+						</div>
+						<div class="goods">
+							<div class="obj">
+								<div class="obj-h"><p>檢視</p></div>
+								<img class="pic" src="./img-exam-2/p-6.png" alt="猜猜我是誰!??">
+								<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/p-6.png -->
+							</div>
+							<div class="info-do">
+								<div class="info-do-obj"><p>焦糖甜甜圈</p></div>
+								<div class="info-do-price"><p>NT$ 450</p></div>
+							</div>
+							<div class="btn"><p>加入購物車</p></div>
+						</div>
+				</div>
+			</div>
+			<div class="info-btn-func">
+				<ul class="info-btn-func-list">
+					<li><a href="#"><img src="./img-exam-2/arrow_left.png"></a></li>
+					<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/arrow_left.png -->
+					<li><a class="begin" href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#"><img src="./img-exam-2/arrow_right.png"></a></li>
+					<!-- https://raw.githubusercontent.com/kancheng/webLayoutTraining1st/master/student-week1/arrow_right.png -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="g-part"></div>
+	<div class="lg-part"></div>
+</div>
+</body>
+</html>

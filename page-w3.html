@@ -4,6 +4,15 @@
 	<meta charset="utf-8">
 	<title>Test</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+	<!-- CSS FONT -->
+	<!-- Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
 	<style type="text/css">
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,6 +58,10 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 *, *:before, *:after {
 	box-sizing: border-box;
 	/* Test */
@@ -63,17 +76,337 @@ body {
 
 /* =============================================================== */
 
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
+header {
+	background-color: #AA0601;
+}
+
+.wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 80px;
+}
+
+.header-menu {
+	display: flex;
+	font-size: 20px;
+}
+
+.header-menu li {
+	padding: 25px 32px; 
+}
+
+.header-menu li a {
+	color: white;
+}
+
+.header-menu li:hover {
+	background-color: #ca130d; 
+}
+
+footer {
+	background-color: #AA0601; 
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+	padding-bottom: 32px;
+	border-bottom: 1px solid white; 
+}
+
+.footer-menu {
+	display: flex;
+	align-items: center;
+	padding-bottom: 36px;
+}
+.footer-menu li {
+	padding-right: 48px; 
+}
+.footer-menu a {
+	color: white;
+	font-size: 16px;
+}
+.footer-menu a:hover {
+	opacity: 0.6; 
+}
+
+.icon {
+	display: flex;
+}
+.icon img {
+	max-width: 48px;
+}
+.icon a {
+	display: block;
+}
+
+.icon a:hover {
+	opacity: 0.8; 
+}
+
+.ml-32 {
+	margin-left: 32px;
+}
+
+.call {
+	color: white;
+}
+
+.mail {
+	color: white;
+}
+
+.tel {
+	font-size: 36px;
+}
+
+.tel span {
+	font-size: 36px;
+	padding-right: 22px;
+}
+.tel a {
+	color: white;
+}
+
+.tel a:hover {
+	opacity: 0.6;
+}
+
+.copyright {
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 0;
+}
+
+.copyright a:hover {
+	opacity: 0.6; 
+}
+
+.service-footer {
+	display: flex;
+}
+
+.service-footer a {
+	color: white;
+}
+
+.pr-48 {
+	padding-right: 48px;
+}
+
+@media screen and (max-width: 767px) {
+	.wrap {
+		flex-direction: column;
+		padding-right: 0;
+		padding-left: 0; 
+	}
+
+	.logo {
+		padding: 12px 0; 
+	}
+
+	.tel {
+		font-size: 16px;
+	}
+
+	.tel span {
+		font-size: 16px;
+		padding-right: 11px;
+	}
+
+	.header-menu {
+		width: 100%;
+		flex-wrap: wrap; 
+	}
+
+	.header-menu li {
+		width: 50%;
+		padding: 12px 0;
+		text-align: center;
+		border-top: 1px solid white;
+		border-right: 1px solid #FFF; 
+	}
+
+	.header-menu a {
+		font-size: 16px;
+		display: block;
+		padding: 12px 0;
+	}
+
+	.nav {
+		padding: 24px 0; 
+	}
+
+	.footer-menu {
+		display: none;
+	}
+
+	.icon li {
+		margin-left: 8px; 
+	}
+
+	.icon img {
+		max-width: 24px;
+	}
+
+	.tel {
+		font-size: 16px;
+	}
+
+	.tel span {
+		font-size: 16px;
+		padding-right: 11px;
+	}
+
+	.copyright {
+		flex-direction: column;
+		padding-top: 16px; 
+	}
+
+	.copyright p {
+		font-size: 16px;
+	}
+
+	.service-footer {
+		font-size: 16px;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start; 
+	}
+
+	.service-footer li {
+		padding-top: 8px;
+	}
+}
+
+/* TEST, 之後移除 */
+.test {
+	max-width: 100%;
+	/* height: 400px; */
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 22px;
+	padding-right: 22px;
+	overflow: hidden;
+}
+.test p {
+	font-size: 20px;
+	line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+/* TEST, 之後移除 */
+	.test {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 12px;
+		padding-right: 12px;
+		overflow: hidden;
+	}
+	.test p {
+		font-size: 18px;
+	}
+}
 	</style>
+
 
 
 </head>
 <body>
 
 <!-- 
-
 	https://xd.adobe.com/view/5b20cbc4-5c64-4b67-814e-633b078a8cd4-0e73/grid/
-	
-	-->
 
+	Reference :
+
+	> 有看過老師跟同學的版本後再動手
+	
+	0. https://codepen.io/AliceChiang/pen/jOzWvEW
+
+	1. https://chiangchungshuo.github.io/test/
+-->
+
+<header>
+	<div class="wrap container">
+		<a href="#" class="logo"><img src="./img-w3/logo-white.png" alt="This is a logo"></a>
+		<ul class="header-menu">
+			<li><a href="#">系列鏡框</a></li>
+			<li><a href="#">門市據點</a></li>
+			<li><a href="#">部落格</a></li>
+			<li><a href="#">常見問題</a></li>
+		</ul>
+	</div>
+</header>
+<!-- DIV TEST 內容 Start -->
+<div class="test">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br /><br />Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero 西塞羅 in 45 BC</p>
+	<!-- https://www.lipsum.com/ -->
+</div>
+<!-- DIV TEST 內容 End -->
+<footer>
+	<div class="container">
+		<div class="nav">
+			<div class="footer">
+				<ul class="footer-menu">
+					<li><a href="#">首頁</a></li>
+					<li><a href="#">系列鏡框</a></li>
+					<li><a href="#">門市據點</a></li>
+					<li><a href="#">部落格</a></li>
+					<li><a href="#">常見問題</a></li>
+				</ul>
+				<ul class="tel">
+					<li>
+						<span class="material-symbols-outlined call">call</span>
+						<a href="tel:+0800-000-000">0800-000-000</a>
+					</li>
+					<li>
+						<span class="material-symbols-outlined mail"> mail </span>
+						<a href="mailto:glasses@business.com">glasses@business.com</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="icon">
+				<li>
+					<a href="#"><img src="./img-w3/ic-social-fb.png" alt="This is a facebook icon."></a>
+				</li>
+				<li class="ml-32">
+					<a href="#"><img src="./img-w3/ic_social_ig.png" alt="This is a ig icon."></a>
+				</li>
+				<li class="ml-32">
+				<a href="#"><img src="./img-w3/ic_social_line.png" alt="This is a line icon."></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="copyright">
+			<p>Copyright © 2020 Glasses.All rights reserved.</p>
+			<ul class="service-footer">
+				<li class="pr-48"><a href="#">隱私權政策</a></li>
+				<li><a href="#">服務條款</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
 </body>
 </html>

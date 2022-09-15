@@ -1,0 +1,257 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	font-family: verdana;
+}
+
+
+.wrap {
+	margin: 0 auto;
+	width: 1024px;
+	height: 2000px;
+}
+
+.info {
+	background: #f1eded;
+	margin-bottom: 15px;
+}
+
+.logo-set {
+	width: 224px;
+	height: 50px;
+}
+
+.header {
+	margin-bottom: 30px;
+}
+
+.content {
+	margin-bottom: 20px;
+}
+
+.footer {
+	background: gray;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.course-item h2 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.course-item p {
+	text-align: left;
+	font-size: 18px;
+}
+
+.course-item ul  {
+	list-style: initial;
+	margin-left: 20px;
+}
+
+.course-item ul li {
+	text-align: left;
+	font-size: 18px;
+}
+.course-item  {
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	line-height: 1.5;
+}
+
+.course-item {
+    box-shadow: 1.5px 1.5px 3px #bdbbbb;
+	width: 300px;
+}
+.course {
+	display: flex;
+	justify-content: space-around;
+}
+
+.smenu {
+	padding: 10px;
+	justify-content: flex-end;
+	display: flex;
+}
+
+.smenu li a {
+	text-decoration: none;
+}
+
+.ggg {
+	color: gray;
+}
+
+.smenu li .fb {
+	color: #3b5998;
+}
+
+.smenu li .twitter {
+	color: #00acee;
+}
+
+
+.menu ul li a {
+	text-decoration: none;
+	margin: 10px;
+}
+
+.menu {
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 30px;
+}
+
+.pos {
+	position: absolute;
+}
+
+.menu-list {
+	margin-right: 10px;
+	padding-bottom: 5px;
+}
+
+.smenu-list {
+	margin-right: 5px;
+	padding-bottom: 3px;
+}
+.menu-list a {
+	color: #4fc08d;
+	text-decoration: none;
+}
+
+.menu-list .s {
+	color: #4fc08d;
+	text-decoration: none;
+	border-bottom: 5px solid #4fc08d;
+}
+
+.menu-list a:active {
+	border-bottom: 5px solid #4fc08d;
+}
+
+.menu-list :hover{
+	border-bottom: 5px solid lightgray;
+}
+
+.show {
+	display: block;
+	height: 250px;
+	background: #2b2828;
+	padding-top: 100px;
+	margin-bottom: 50px;
+}
+
+.showin {
+	height: 150px;
+	background: #706b6bbd;
+}
+
+.showin p {
+	padding: 30px;
+	font-size: 30px;
+	line-height: 1.5;
+	color: white;
+}
+
+.classshow {
+	height: 300px;
+}
+
+.classshow .showinfo h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.showinfo {
+	padding: 50px;
+}
+
+.back {
+	background: #579E8B;
+	height: 300px;
+}
+
+.backinfo {
+	padding: 50px;
+}
+
+.back .backinfo h1 {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+.back .backinfo p {
+	margin-top: 10px;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+}
+
+a.totop {
+	text-decoration:none;
+	display: none;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	background: rgba(0,0,0,0.4);
+	color:#fff;
+	position: fixed;
+	bottom: 60px;
+	right: 7%;
+	z-index: 999;
+	font-size: 20px;
+	border-radius: 4px;
+}
+
